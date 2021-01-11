@@ -71,7 +71,7 @@ body, html {
         height: 30rem;
     }
 
-    @media(max-width: 385px){
+    @media(max-width: 400px){
         header{
             display: flex;
             justify-content: center;
