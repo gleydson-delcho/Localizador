@@ -29,11 +29,14 @@ body, html {
     justify-content: center;
     align-items: center;
 
+    
+    /* overflow: auto; */
+
     margin: 2em 2em 0 2em;
     padding: 0.8em;
 
 
-    width: 80rem;
+    width: auto;
     height: 30rem;
 }
 
@@ -64,14 +67,14 @@ body, html {
         align-items: center;
     
         box-sizing: border-box;
-        margin: 2em 2em 0 4em;
+        margin: 2em 2em 0 2em;
         padding: 0.8em;
     
-        width: 400px;
+        width: auto;
         height: 30rem;
     }
 
-    @media(max-width: 400px){
+    @media(max-width: 500px){
         header{
             display: flex;
             justify-content: center;
@@ -102,10 +105,10 @@ body, html {
             align-items: center;
         
             box-sizing: border-box;
-            margin: 2em 2em 0 4em;
+            margin: 2em 2em 0 2em;
             padding: 0.8em;
         
-            width: 250px;
+            width: auto;
             height: 30rem;
         }   
     }
