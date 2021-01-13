@@ -3,12 +3,10 @@ function localization() {
         navigator.geolocation.getCurrentPosition((position) => {
            var latitude = position.coords.latitude
            var longitude = position.coords.longitude
-        //    console.log(latitude, longitude)
-
            var map = L.map('localle', {
                 center: [latitude, longitude],
                 zoom: 15
-            })
+            });
             
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -24,6 +22,6 @@ function localization() {
         }).addTo(map);
         }, (error) => console.log(error))
     }else{
-        alert("Oops! Não foi possível acessar sua localização!")
+        alert("Oops! Não foi possível acessar sua localização!");
     } 
-}localization()
+}localization();
